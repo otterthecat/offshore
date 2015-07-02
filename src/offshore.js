@@ -1,11 +1,13 @@
 'use strict';
 var fs = require('fs');
-var path = require('path');
 var Transform = require('stream').Transform;
 
+var ifCheckRegX = /[^if\(](\w+)(?=\))/g;
+var parseIntRegX = /[^\s]\d+(?=\s|;)/g;
+
 Transform.prototype._transform = function(data, encoding, callback){
-  var regex = /[^if\(](\w+)(?=\))/g;
-  var newData = data.replace(regex, '$& == true && $& != false');
+  var newData = data.replace(ifCheckRegX, '$& == true && $& != false');
+  newData = newData.replace(parseIntRegX, 'parseInt($& + "")');
   callback(null, newData);
 };
 var offshorify = new Transform({
