@@ -42,8 +42,6 @@
 
   "requireBlocksOnNewline": 1,
 
-  "disallowPaddingNewLinesInBlocks": true,
-
   "disallowEmptyBlocks": true,
 
   "disallowSpacesInsideObjectBrackets": "all",
@@ -52,15 +50,9 @@
 
   "disallowSpacesInsideParentheses": true,
 
-  "disallowQuotedKeysInObjects": true,
-
-  "disallowDanglingUnderscores": true,
-
   "disallowSpaceAfterObjectKeys": true,
 
   "requireCommaBeforeLineBreak": true,
-
-  "requireAlignedObjectValues": "all",
 
   "requireOperatorBeforeLineBreak": true,
 

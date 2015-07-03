@@ -1,0 +1,44 @@
+{
+  "name": "offshore",
+  "version": "0.1.0",
+  "description": "Code harder, not smarter.",
+  "main": "source/offshore.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/otterthecat/offshore.git"
+  },
+  "keywords": [
+    "offshore",
+    "stream",
+    "code",
+    "otc"
+  ],
+  "author": "Otter the Cat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/otterthecat/offshore/issues"
+  },
+  "homepage": "https://github.com/otterthecat/offshore",
+ "devDependencies": {
+    "chai": "^2.1.0",
+    "gulp": "^3.8.10",
+    "gulp-bump": "^0.1.13",
+    "gulp-complexity": "^0.2.1",
+    "gulp-eslint": "^0.5.0",
+    "gulp-istanbul": "^0.2.2",
+    "gulp-jscs": "^1.4.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plato": "^0.2.1",
+    "gulp-util": "^2.2.20",
+    "jscs-stylish": "^0.3.1",
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.7.0"
+  }
+}

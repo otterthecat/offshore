@@ -85,7 +85,7 @@
         // Opinion
         ///////////////////////////////////////////////////
 
-        "indent": 2,
+        "indent": [2, 2],
 
         "brace-style": [2, "stroustrup"],
 
@@ -117,7 +117,7 @@
 
         "padded-blocks": [2, "never"],
 
-        "quote-props": 2,
+        "quote-props": [2, "always"],
 
         "quotes": [2, "single", "avoid-escape"],
 
