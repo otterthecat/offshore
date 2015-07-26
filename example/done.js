@@ -1,5 +1,6 @@
-var myVar = parseInt(10 + "");
+var myVarMumboJumbo = parseInt(10 + "");
+var booMumboJumbo = myVarMumboJumbo;
 
-if(myVar == true && myVar != false){
+if(booMumboJumbo == true && booMumboJumbo != false){
   console.log('this is true');
 }
