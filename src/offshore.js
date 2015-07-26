@@ -4,6 +4,7 @@ var purgeStrictRegX = /'use strict';(\r|\n)+/g;
 var ifCheckRegX = /[^if\(](\w+)(?=\))/g;
 var parseIntRegX = /[^\s]\d+(?=\s|;)/g;
 var variablePicker = /[^= \d+](\w+)(?= +=|,|;)/gm;
+var doublReturn = /\n\n/g;
 
 var _buffer = [];
 
@@ -12,7 +13,8 @@ Transform.prototype._transform = function (data, encoding, callback) {
 
   var newData = data.replace(ifCheckRegX, '$& == true && $& != false')
                   .replace(parseIntRegX, 'parseInt($& + "")')
-                  .replace(purgeStrictRegX, '');
+                  .replace(purgeStrictRegX, '')
+                  .replace(doublReturn, '\n// this code has been implemented\n');
 
   var myMatches = newData.match(variablePicker).filter(function(item){
     // TODO - make replace call below a helper function include
